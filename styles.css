@@ -39,7 +39,7 @@ section {
   cursor: pointer;
 }
 
-.button {
+.clickButton {
   display: block;
   padding: 5px;
   width: 125px;
@@ -50,7 +50,7 @@ section {
   transition: 0.3s ease-in-out;
 }
 
-.button:hover {
+.clickButton:hover {
   background-color: #f6a0ad;
   border: 1px solid black;
 }
