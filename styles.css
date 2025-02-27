@@ -2,6 +2,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 10px;
 }
 
 .red {
@@ -34,4 +35,10 @@ section {
 #addColor:hover {
   background-color: rgb(153, 153, 207);
   cursor: pointer;
+}
+
+.button {
+  display: block;
+  padding: 5px;
+  width: 125px;
 }
