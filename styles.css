@@ -1,0 +1,37 @@
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+#styleContainer {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+}
+
+#addColor {
+  width: 110px;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 2px 2px 2px lightgrey;
+  background-color: rgb(188, 188, 253);
+}
+
+#addColor:hover {
+  background-color: rgb(153, 153, 207);
+  cursor: pointer;
+}
