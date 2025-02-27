@@ -23,6 +23,9 @@ clickButton.addEventListener("click", function () {
   console.log("Jeg er en klikket knapp!")
 })
 
+//
+// NY BIT
+//
 
 //FÅ TEKST UT PÅ SIDEN
 
@@ -33,6 +36,31 @@ clickButton.addEventListener("click", function () {
 4. Legge til det nye elementet i div
 5. Legge det inn i en addEventListener, så det kun skjer når vi trykker på knappen
 */
+
+// Lager en variabel som henter et element med et id-navn fra HTML
+const addText = document.querySelector("#addText");
+// Sjekker at variabelen har hentet riktig element
+console.log(addText);
+
+// Legger til en hendelse lytter til knappen hentet over.
+addText.addEventListener("click", function () {
+  // Lager en variabel som henter et element med et id-navn fra HTML
+  const textContainer = document.querySelector("#newTextContainer");
+  // Sjekker at variabelen har hentet riktig element
+  console.log(textContainer);
+  // Lager en variabel som lager et nytt html element i JS
+  const h1Element = document.createElement("h1");
+  // Sjekker at variabelen er blitt laget riktig.
+  console.log(h1Element);
+  // Gir elementet innhold 
+  h1Element.textContent = "Velkommen!";
+  // Legger til det nye h1-elementet til i div-elementet
+  textContainer.appendChild(h1Element);
+});
+
+//
+// NY BIT
+//
 
 //ENDRE STYLING I JS
 
@@ -48,6 +76,29 @@ classlist.toggle = skifter mellom å legge til og ta bort klassenavn
 3. lag en eventlistener til knappen
 4. lagge til classList med ny bakgrunnsfarge i eventlistener
 */
+
+// Lager en variabel som henter et element med et id-navn fra HTML
+const addColor = document.querySelector("#addColor");
+// Sjekker at variabelen har hentet riktig element
+console.log(addColor);
+
+// Legger til en hendelse lytter til knappen hentet over.
+addColor.addEventListener("click", function () {
+  // Lager en variabel som henter et element med et id-navn fra HTML
+  const styleContainer = document.querySelector("#styleContainer");
+  // Sjekker at variabelen har hentet riktig element
+  console.log(styleContainer);
+  // Lager en variabel som henter et element med et id-navn fra HTML
+  const addColor = document.querySelector("#addColor");
+  // Sjekker at variabelen har hentet riktig element
+  console.log(addColor);
+  // Gir elementet en ny klasse for å sette en ny styling.
+  styleContainer.classList.add("red");
+});
+
+//
+// NY DEL
+//
 
 /*
 OPPGAVE 2:
